@@ -22,6 +22,8 @@ int main(int argc, const char * argv[]) {
     puts(words);
     printf("Hello, World!\n");
     
+    printf("什么个jb情况");
+    
     return 0;
 }
 
