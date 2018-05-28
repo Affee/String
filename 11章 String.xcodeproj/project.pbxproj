@@ -8,11 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		F613E85820B58DDD001195A3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = F613E85720B58DDD001195A3 /* main.c */; };
+		F616736420BBF4D900927C76 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = F616736320BBF4D900927C76 /* main.c */; };
 		F64F20C220B81C4E00A62B52 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = F64F20C120B81C4E00A62B52 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		F613E85220B58DDD001195A3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		F616735F20BBF4D900927C76 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -35,12 +45,21 @@
 /* Begin PBXFileReference section */
 		F613E85420B58DDD001195A3 /* 11章 String */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "11章 String"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F613E85720B58DDD001195A3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		F616736120BBF4D900927C76 /* 11.7 字符串函数 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "11.7 字符串函数"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F616736320BBF4D900927C76 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		F64F20BF20B81C4E00A62B52 /* 11.3 addresses.c 字符串的地址 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "11.3 addresses.c 字符串的地址"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F64F20C120B81C4E00A62B52 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F613E85120B58DDD001195A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F616735E20BBF4D900927C76 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -62,6 +81,7 @@
 			children = (
 				F613E85620B58DDD001195A3 /* 11章 String */,
 				F64F20C020B81C4E00A62B52 /* 11.3 addresses.c 字符串的地址 */,
+				F616736220BBF4D900927C76 /* 11.7 字符串函数 */,
 				F613E85520B58DDD001195A3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +91,7 @@
 			children = (
 				F613E85420B58DDD001195A3 /* 11章 String */,
 				F64F20BF20B81C4E00A62B52 /* 11.3 addresses.c 字符串的地址 */,
+				F616736120BBF4D900927C76 /* 11.7 字符串函数 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +102,14 @@
 				F613E85720B58DDD001195A3 /* main.c */,
 			);
 			path = "11章 String";
+			sourceTree = "<group>";
+		};
+		F616736220BBF4D900927C76 /* 11.7 字符串函数 */ = {
+			isa = PBXGroup;
+			children = (
+				F616736320BBF4D900927C76 /* main.c */,
+			);
+			path = "11.7 字符串函数";
 			sourceTree = "<group>";
 		};
 		F64F20C020B81C4E00A62B52 /* 11.3 addresses.c 字符串的地址 */ = {
@@ -109,6 +138,23 @@
 			name = "11章 String";
 			productName = "11章 String";
 			productReference = F613E85420B58DDD001195A3 /* 11章 String */;
+			productType = "com.apple.product-type.tool";
+		};
+		F616736020BBF4D900927C76 /* 11.7 字符串函数 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F616736720BBF4D900927C76 /* Build configuration list for PBXNativeTarget "11.7 字符串函数" */;
+			buildPhases = (
+				F616735D20BBF4D900927C76 /* Sources */,
+				F616735E20BBF4D900927C76 /* Frameworks */,
+				F616735F20BBF4D900927C76 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "11.7 字符串函数";
+			productName = "11.7 字符串函数";
+			productReference = F616736120BBF4D900927C76 /* 11.7 字符串函数 */;
 			productType = "com.apple.product-type.tool";
 		};
 		F64F20BE20B81C4E00A62B52 /* 11.3 addresses.c 字符串的地址 */ = {
@@ -141,6 +187,10 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
+					F616736020BBF4D900927C76 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					F64F20BE20B81C4E00A62B52 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -161,6 +211,7 @@
 			targets = (
 				F613E85320B58DDD001195A3 /* 11章 String */,
 				F64F20BE20B81C4E00A62B52 /* 11.3 addresses.c 字符串的地址 */,
+				F616736020BBF4D900927C76 /* 11.7 字符串函数 */,
 			);
 		};
 /* End PBXProject section */
@@ -171,6 +222,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F613E85820B58DDD001195A3 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F616735D20BBF4D900927C76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F616736420BBF4D900927C76 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +363,22 @@
 			};
 			name = Release;
 		};
+		F616736520BBF4D900927C76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F616736620BBF4D900927C76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		F64F20C420B81C4E00A62B52 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -337,6 +412,15 @@
 			buildConfigurations = (
 				F613E85C20B58DDD001195A3 /* Debug */,
 				F613E85D20B58DDD001195A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F616736720BBF4D900927C76 /* Build configuration list for PBXNativeTarget "11.7 字符串函数" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F616736520BBF4D900927C76 /* Debug */,
+				F616736620BBF4D900927C76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

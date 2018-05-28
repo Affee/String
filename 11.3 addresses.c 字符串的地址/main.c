@@ -9,6 +9,7 @@
 #include <stdio.h>
 #define MSG "I'm special"
 
+void gitttt();
 
 int main(int argc, const char * argv[]) {
     char ar[] = MSG;
@@ -19,5 +20,19 @@ int main(int argc, const char * argv[]) {
     printf("            address MSG: %p\n",MSG);
     printf("address of \"I'm special\":%p \n","I'm special");
 
+    gitttt();
     return 0;
+}
+
+void gitttt(){
+//    字符串和指针
+    const char *mesg = "Don't be a fool";
+    const char *copy;
+    
+    copy = mesg;
+    printf("%s\n",copy);
+    printf("mesg = %s;&mesg = %p;value= %p\n",mesg,&mesg,mesg);
+    printf("copy = %s;&copy = %p;value = %p\n",copy,&copy,copy);
+
+    printf("nong-==========00000\n");
 }
